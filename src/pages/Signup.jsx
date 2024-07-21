@@ -133,7 +133,7 @@ const Signup = () => {
 
   const checkEmailExists = async (email) => {
     // Simulate an API call to check if the email exists
-    const response = await fetch(`http://localhost:2999/check-email`, {
+    const response = await fetch(`https://mernede.vercel.app/check-email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
