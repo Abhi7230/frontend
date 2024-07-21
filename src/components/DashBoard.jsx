@@ -183,7 +183,7 @@ const Dashboard = () => {
 
   const handleViewAllSubmissions = async () => {
     try {
-      const response = await fetch('http://localhost:3000/user/all-submissions', {
+      const response = await fetch('https://onlinejudge-2nas.onrender.com/user/all-submissions', {
         headers: { 'Authorization': `Bearer ${authToken}` }
       });
       const data = await response.json();
